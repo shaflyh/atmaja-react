@@ -34,19 +34,19 @@ function HeaderOne() {
     const headerCss = `flex lg:justify-between justify-end items-center`;
     return (
         <>
-            <header className="absolute w-full z-10">
+            <header className="absolute z-10 w-full">
                 <div
                     className="sticky-holder header-section sticky-style-1"
                     ref={header}
                 >
-                    <div className="custom-container container">
+                    <div className="container custom-container">
                         <div className="grid grid-cols-12 items-center leading-[120px]">
-                            <div className="lg:col-span-2 col-span-6">
+                            <div className="col-span-6 lg:col-span-3">
                                 <WhiteLogo />
                             </div>
-                            <div className="lg:col-span-7 lg:block hidden">
+                            <div className="hidden lg:col-span-8 lg:block">
                                 <nav>
-                                    <ul className="main-menu text-white">
+                                    <ul className="text-white main-menu">
                                         <li
                                             className={
                                                 router.pathname === '/'
@@ -67,9 +67,22 @@ function HeaderOne() {
                                                     : ''
                                             }
                                         >
-                                            <Link href="/about">
+                                            <Link href="/">
                                                 <a>
                                                     <span>About</span>
+                                                </a>
+                                            </Link>
+                                        </li>
+                                        <li
+                                            className={
+                                                router.pathname === '/programs'
+                                                    ? 'active'
+                                                    : ''
+                                            }
+                                        >
+                                            <Link href="/">
+                                                <a>
+                                                    <span>Programs</span>
                                                 </a>
                                             </Link>
                                         </li>
@@ -80,22 +93,9 @@ function HeaderOne() {
                                                     : ''
                                             }
                                         >
-                                            <Link href="/projects">
+                                            <Link href="/">
                                                 <a>
                                                     <span>Projects</span>
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li
-                                            className={
-                                                router.pathname === '/posts'
-                                                    ? 'active'
-                                                    : ''
-                                            }
-                                        >
-                                            <Link href="/posts">
-                                                <a>
-                                                    <span>Posts</span>
                                                 </a>
                                             </Link>
                                         </li>
@@ -106,7 +106,7 @@ function HeaderOne() {
                                                     : ''
                                             }
                                         >
-                                            <Link href="/contact">
+                                            <Link href="/">
                                                 <a>
                                                     <span>Contact</span>
                                                 </a>
@@ -115,29 +115,15 @@ function HeaderOne() {
                                     </ul>
                                 </nav>
                             </div>
-                            <div className="lg:col-span-3 col-span-6">
-                                <div className={`outer-box ${headerCss}`}>
-                                    <ul className="language-list text-white">
-                                        <li>
-                                            <Link href="/">END</Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/">FRA</Link>
-                                        </li>
-                                    </ul>
-                                    <div className="offcanvas-area">
-                                        <div className="offcanvas">
-                                            <button
-                                                type="button"
-                                                className="menu-bars flex text-white text-[24px]"
-                                                aria-label="Right Align"
-                                            >
-                                                <FaBars
-                                                    onClick={showOffcanvas}
-                                                />
-                                            </button>
-                                        </div>
-                                    </div>
+                            <div className="col-span-6 lg:col-span-1">
+                                <div className="flex justify-end">
+                                    <button
+                                        type="button"
+                                        className="menu-bars flex text-white text-[24px]"
+                                        aria-label="Right Align"
+                                    >
+                                        <FaBars onClick={showOffcanvas} />
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -162,10 +148,10 @@ function HeaderOne() {
                                     <Link href="/">
                                         <a>
                                             <Image
-                                                src="/images/logo/logo-2.png"
+                                                src="/images/logo/atmaja-color.png"
                                                 alt="Logo"
-                                                width={70}
-                                                height={70}
+                                                width={280}
+                                                height={84}
                                             />
                                         </a>
                                     </Link>

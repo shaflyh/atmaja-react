@@ -1,12 +1,8 @@
 ---
 id: 'hero-02'
 title: Hero Image
-image: /images/hero/1.jpg
-heroYear: 2022
-twitterIcon: 'FaTwitter'
-facebookIcon: 'FaFacebookF'
-googleIcon: 'FaGoogle'
-heroCategory: Rustic interior <br /> studio
-heroTitle: Rustic and <br /> Modern
-heroContactInfo: contact@Rustictudio.co
+image: /images/hero/hero-image-2.jpg
+heroCategory: Eduvacation Xplore
+heroTitle: Yokohama National <br /> University
+link: /aboard-program2
 ---

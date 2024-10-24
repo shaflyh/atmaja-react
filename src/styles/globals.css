@@ -97,7 +97,7 @@ textarea:focus-visible {
     @apply before:w-full before:visible before:opacity-90;
 }
 .offcanvas-menu-wrap .offcanvas-menu {
-    @apply opacity-90 bg-white fixed top-0 right-[-300px] w-[300px] h-full ease-in-out duration-[450ms] delay-[350ms] p-5 z-20;
+    @apply opacity-90 bg-white fixed top-0 right-[-400px] w-[400px] h-full ease-in-out duration-[450ms] delay-[350ms] p-5 z-20;
 }
 .offcanvas-menu-wrap.active .offcanvas-menu {
     @apply right-0 opacity-100;

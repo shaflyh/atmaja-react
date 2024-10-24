@@ -6,10 +6,10 @@ function WhiteLogo() {
         <Link href="/">
             <a className="inline-block align-middle leading-[1]">
                 <Image
-                    src="/images/logo/logo.png"
+                    src="/images/logo/atmaja-white.png"
                     alt="Logo"
-                    width={70}
-                    height={70}
+                    width={180}
+                    height={60}
                 />
             </a>
         </Link>
