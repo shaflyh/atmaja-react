@@ -31,16 +31,14 @@ function HomePage({
             </Head>
             <HeaderOne />
             <Hero heroItems={heroItems} />
+            <About />
             <Services services={services} />
             <LatestProject projects={projects} />
-            <About />
-            <PricingTab pricingItems={pricingItems} />
             <Testimonial
                 testimonialItems={testimonialItems}
                 testimonialTitle="+1,250 Happy Clients"
             />
             <Brand brandItems={brandItems} />
-            <FeaturedPost posts={posts} />
         </>
     );
 }
