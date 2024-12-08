@@ -1,9 +1,9 @@
 ---
-title: 'Brossia Heigh Luxury Apartment'
-category: 'residenital'
+title: 'Jakarta Institute of Technology'
+category: 'Future Leader Abroad'
 date: '2022-01-12'
-image: 'brossia.jpg'
-descriptionImg: '1.jpg'
+image: 'Project 1.png'
+descriptionImg: 'Project 2.png'
 excerpt: 'Residenital'
 location: 'Calle Blancos, Costa Rica'
 clientName: 'Edna Smith'
