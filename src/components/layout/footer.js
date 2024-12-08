@@ -10,43 +10,45 @@ function Footer() {
         <footer className="footer-area md:pt-[120px] pt-[60px]">
             <div className="footer-top">
                 <div className="custom-container">
-                    <div className="lm:grid xl:grid-cols-5 lm:grid-cols-12 xl:gap-x-[30px] gap-[30px]">
-                        <div className="max-lg:col-span-12">
+                    <div className="lm:grid grid-cols-12 xl:gap-x-[30px] gap-[30px]">
+                        <div className="flex items-center justify-center col-span-3 fixed-lg:col-span-3 fixed-md:col-span-3 fixed-lm:col-span-12 max-sm:text-center">
                             <div className="footer-logo">
                                 <Image
-                                    src="/images/logo/footer-logo.png"
+                                    src="/images/logo/atmaja-logo-1.png"
                                     alt="Logo"
-                                    width={70}
-                                    height={70}
+                                    width={194}
+                                    height={164}
                                 />
                             </div>
                         </div>
-                        <div className="fixed-lg:col-span-3 fixed-md:col-span-4 fixed-lm:col-span-6 max-sm:pt-[35px]">
+                        <div className="col-span-6 fixed-lg:col-span-6 fixed-md:col-span-6 fixed-lm:col-span-12 flex flex-col items-center max-lm:text-center max-sm:pt-[35px]">
                             <div className="footer-widget-item">
                                 <h2 className="title">Contact</h2>
                                 <ul className="contact-info mt-[25px]">
                                     <li>
-                                        17 Princess Road, London, Greater
-                                        London, NW18JR, Uk
+                                        Jl. Pluit Karang Cantik VI No.36,
+                                        RT.4/RW.8, Pluit, Kec. Penjaringan,
+                                        Jakarta Utara, Daerah Khusus Ibukota
+                                        Jakarta 14450
                                     </li>
                                     <li>
-                                        <Link href="mailto:hello@Rusticstudio.co">
-                                            <a className="hover:text-black transition-all">
-                                                hello@Rusticstudio.co
+                                        <Link href="mailto:info@atmajapin.com">
+                                            <a className="transition-all hover:text-black">
+                                                info@atmajapin.com
                                             </a>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="tel:+0084-912-3548-073">
-                                            <a className="hover:text-black transition-all">
-                                                (+0084) 912-3548-073
+                                        <Link href="tel:+6283135698000">
+                                            <a className="transition-all hover:text-black">
+                                                (+62) 831-3569-8000
                                             </a>
                                         </Link>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="fixed-lg:col-span-3 fixed-md:col-span-3 fixed-lm:col-span-6 max-sm:pt-[30px]">
+                        <div className="col-span-3 fixed-lg:col-span-3 fixed-md:col-span-3 fixed-lm:col-span-12 flex flex-col items-center max-lm:text-center max-sm:pt-[30px]">
                             <div className="footer-widget-item">
                                 <h2 className="title">Quick Links</h2>
                                 <ul className="footer-list mt-[25px]">
@@ -68,116 +70,31 @@ function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="fixed-lg:col-span-3 fixed-md:col-span-2 fixed-lm:col-span-6 max-sm:pt-[30px]">
-                            <div className="footer-widget-item">
-                                <h2 className="title">Studio</h2>
-                                <ul className="footer-list mt-[25px]">
-                                    <li>
-                                        <Link href="/about">About</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/contact">Contact</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/about">Career</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/posts">Blog</Link>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="fixed-lg:col-span-3 fixed-md:col-span-3 fixed-lm:col-span-6 max-sm:pt-[30px]">
-                            <div className="footer-widget-item">
-                                <h2 className="title">Help Center</h2>
-                                <ul className="footer-list mt-[25px]">
-                                    <li>
-                                        <Link href="/about">FAQs</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/about">
-                                            Terms & Conditions
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/about">
-                                            Privacy Policy
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/contact">Help</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/about">Services</Link>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
             <div className="footer-bottom">
                 <div className="custom-container">
                     <div className="inner-container border-[#dfdfdf] border-t md:mt-[95px] mt-[50px] py-9">
-                        <div className="md:grid md:grid-cols-12 flex flex-col">
+                        <div className="flex flex-col md:grid md:grid-cols-12">
                             <div className="md:col-span-4 max-lm:order-last max-lm:pt-[10px]">
                                 <div className="copyright flex-wrap md:justify-start justify-center md:mb-0 mb-[10px]">
                                     © {currentYear}
-                                    <span className="mx-1">RUSTIC</span>
-                                    Made with © by
-                                    <div className="text-[#f53400] mx-1">
-                                        <AiIcons.AiFillHeart />
-                                    </div>
-                                    <Link href="https://themeforest.net/user/codecarnival/portfolio">
-                                        <a target="_blank">
-                                            <span> CodeCarnival</span>
-                                        </a>
-                                    </Link>
+                                    <span className="mx-1">
+                                        PT Atmaja Perkasa International
+                                    </span>
                                 </div>
                             </div>
                             <div className="md:col-span-6">
                                 <ul className="footer-social-link md:mb-0 mb-[10px]">
                                     <li>
-                                        <Link href="https://twitter.com/">
-                                            <a>Twitter</a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="https://facebook.com/">
-                                            <a>Facebook</a>
+                                        <Link href="https://linkedin.com/">
+                                            <a>LinkedIn</a>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="https://instagram.com/">
                                             <a>Instagram</a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="https://tumblr.com/">
-                                            <a>Tumblr</a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="https://pinterest.com/">
-                                            <a>Pinterest</a>
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="md:col-span-2">
-                                <ul className="footer-language flex md:justify-end justify-center">
-                                    <li className="mr-8">
-                                        <Link href="/about">
-                                            <a className="text-[#30373E] text-[14px] leading-6 uppercase transition-all hover:text-[#263a4f]">
-                                                Eng
-                                            </a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/about">
-                                            <a className="text-[#30373E] text-[14px] leading-6 uppercase transition-all hover:text-[#263a4f]">
-                                                Fre
-                                            </a>
                                         </Link>
                                     </li>
                                 </ul>
