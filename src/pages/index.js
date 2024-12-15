@@ -23,10 +23,10 @@ function HomePage({
     return (
         <>
             <Head>
-                <title>Rustic - React Business Template</title>
+                <title>Atmaja Global Edu</title>
                 <meta
                     name="description"
-                    content="Rustic - React Business Template is an excellent solution to the web designing needs for your website related to creative agency, business, portfolio, corporate, etc. "
+                    content="Atmaja Global Edu - Memajukan pendidikan, menghubungkan dunia!"
                 />
             </Head>
             <HeaderOne />
@@ -48,7 +48,9 @@ export async function getStaticProps() {
     const posts = getAllItems('posts');
     const projects = getAllItems('projects');
     const services = getAllItems('services');
-
+    const pricingItems = getAllItems('pricing');
+    const testimonialItems = getAllItems('testimonial');
+    const brandItems = getAllItems('brands');
     const LatestProject = getFeaturedItems(projects);
     const FeaturedPost = getFeaturedItems(posts);
 
@@ -58,6 +60,9 @@ export async function getStaticProps() {
             projects: LatestProject,
             posts: FeaturedPost,
             services,
+            pricingItems,
+            testimonialItems,
+            brandItems,
         },
     };
 }
