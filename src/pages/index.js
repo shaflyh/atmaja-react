@@ -43,14 +43,24 @@ function HomePage({
     );
 }
 
-export function getStaticProps() {
+// Use getServerSideProps to redirect to the under-construction page
+export async function getServerSideProps() {
+    const siteUnderConstruction = true; // Set this to true if the site is under construction
+
+    if (siteUnderConstruction) {
+        return {
+            redirect: {
+                destination: '/under-construction',
+                permanent: false,
+            },
+        };
+    }
+
     const heroItems = getAllItems('heros');
     const posts = getAllItems('posts');
     const projects = getAllItems('projects');
     const services = getAllItems('services');
-    const pricingItems = getAllItems('pricing');
-    const testimonialItems = getAllItems('testimonial');
-    const brandItems = getAllItems('brands');
+
     const LatestProject = getFeaturedItems(projects);
     const FeaturedPost = getFeaturedItems(posts);
 
@@ -60,9 +70,6 @@ export function getStaticProps() {
             projects: LatestProject,
             posts: FeaturedPost,
             services,
-            pricingItems,
-            testimonialItems,
-            brandItems,
         },
     };
 }
