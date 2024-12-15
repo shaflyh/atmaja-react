@@ -43,19 +43,7 @@ function HomePage({
     );
 }
 
-// Use getServerSideProps to redirect to the under-construction page
-export async function getServerSideProps() {
-    const siteUnderConstruction = true; // Set this to true if the site is under construction
-
-    if (siteUnderConstruction) {
-        return {
-            redirect: {
-                destination: '/under-construction',
-                permanent: false,
-            },
-        };
-    }
-
+export async function getStaticProps() {
     const heroItems = getAllItems('heros');
     const posts = getAllItems('posts');
     const projects = getAllItems('projects');
