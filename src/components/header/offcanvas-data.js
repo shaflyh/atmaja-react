@@ -8,7 +8,7 @@ export const OffcanvasData = [
     {
         id: 'menu-02',
         title: 'About',
-        path: '/',
+        path: '/about',
         cName: 'offcanvas-text',
     },
     {
