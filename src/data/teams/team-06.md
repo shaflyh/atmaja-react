@@ -1,11 +1,11 @@
 ---
-id: 'team-01'
+id: 'team-06'
 title: Team Member
-image: /images/team/Photo-Fitri.png
+image: /images/team/Photo-Hanifah.png
 twitterIcon: 'FaTwitter'
 facebookIcon: 'FaFacebookF'
 instagramIcon: 'FaInstagram'
 linkedinIcon: 'FaLinkedin'
-memberName: Nur Fajria Fitri
-designation: Director of Atmaja Global Edu
+memberName: Dyah Sekarwati
+designation: Secretary and Admission
 ---

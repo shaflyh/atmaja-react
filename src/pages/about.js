@@ -2,12 +2,13 @@ import Head from 'next/head';
 import PropTypes from 'prop-types';
 import HeaderOne from '../components/header/header-1';
 import Services from '../components/home-page/services';
-import About from '../components/home-page/about';
 import Testimonial from '../components/home-page/testimonial';
 import { getAllItems } from '../lib/items-util';
 import Brand from '../components/home-page/brand';
 import PageBanner from '../components/page-banner/index';
 import Team from '../components/team';
+import CompanyProfile from '../components/home-page/company-profile';
+import Commisioner from '../components/home-page/commisioner';
 
 function AboutPage({ services, testimonialItems, brandItems, teamItems }) {
     return (
@@ -17,10 +18,11 @@ function AboutPage({ services, testimonialItems, brandItems, teamItems }) {
             </Head>
             <HeaderOne />
             <PageBanner />
-            <About />
-            <Services services={services} />
-            <Testimonial testimonialItems={testimonialItems} />
-            <Brand brandItems={brandItems} />
+            <CompanyProfile />
+            <Commisioner />
+            {/* <Services services={services} /> */}
+            {/* <Testimonial testimonialItems={testimonialItems} /> */}
+            {/* <Brand brandItems={brandItems} /> */}
             <Team teamItems={teamItems} />
         </>
     );

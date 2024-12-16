@@ -67,7 +67,7 @@ function HeaderOne() {
                                                     : ''
                                             }
                                         >
-                                            <Link href="/">
+                                            <Link href="/about">
                                                 <a>
                                                     <span>About</span>
                                                 </a>

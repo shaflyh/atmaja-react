@@ -1,11 +1,11 @@
 ---
 id: 'team-02'
 title: Team Member
-image: /images/team/2.jpg
+image: /images/team/Photo-Farras.png
 twitterIcon: 'FaTwitter'
 facebookIcon: 'FaFacebookF'
 instagramIcon: 'FaInstagram'
 linkedinIcon: 'FaLinkedin'
-memberName: Tom Holland
-designation: Architect & Project Management
+memberName: Farras M. Hambali
+designation: Director of Eduvacation
 ---

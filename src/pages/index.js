@@ -34,11 +34,11 @@ function HomePage({
             <About />
             <Services services={services} />
             <LatestProject projects={projects} />
-            <Testimonial
+            {/* <Testimonial
                 testimonialItems={testimonialItems}
                 testimonialTitle="+1,250 Happy Clients"
-            />
-            <Brand brandItems={brandItems} />
+            /> */}
+            {/* <Brand brandItems={brandItems} /> */}
         </>
     );
 }

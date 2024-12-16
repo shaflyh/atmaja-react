@@ -9,7 +9,7 @@ function Team({ teamItems }) {
         <div className="team-area md:py-155 py-[55px] border-[#dfdfdf] border-b">
             <div className="container">
                 <h2 className="lm:text-[42px] text-[32px] lm:leading-[50px] mb-[60px]">
-                    Profressional & Passionate
+                    Profressional & Passionate Team
                 </h2>
                 <div className="grid sm:grid-cols-12 lg:gap-x-[70px] fixed-md:gap-x-[30px] gap-[30px]">
                     {teamItems?.map((teamItem) => {
@@ -22,7 +22,7 @@ function Team({ teamItems }) {
                                 className="md:col-span-4 fixed-lm:col-span-6 fixed-sm:col-span-6"
                                 key={teamItem.id}
                             >
-                                <div className="team-member overflow-hidden group">
+                                <div className="overflow-hidden team-member group">
                                     <div className={teamMemberImage}>
                                         <Link href="/about">
                                             <a>

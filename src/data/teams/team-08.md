@@ -1,11 +1,11 @@
 ---
-id: 'team-01'
+id: 'team-07'
 title: Team Member
-image: /images/team/Photo-Fitri.png
+image: /images/team/Photo-Ukhtina.png
 twitterIcon: 'FaTwitter'
 facebookIcon: 'FaFacebookF'
 instagramIcon: 'FaInstagram'
 linkedinIcon: 'FaLinkedin'
-memberName: Nur Fajria Fitri
-designation: Director of Atmaja Global Edu
+memberName: Ukhtina D. Anindita I., M.Psi.
+designation: Psikolog
 ---

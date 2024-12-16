@@ -1,11 +1,11 @@
 ---
-id: 'team-01'
+id: 'team-07'
 title: Team Member
-image: /images/team/Photo-Fitri.png
+image: /images/team/Photo-Mifta.png
 twitterIcon: 'FaTwitter'
 facebookIcon: 'FaFacebookF'
 instagramIcon: 'FaInstagram'
 linkedinIcon: 'FaLinkedin'
-memberName: Nur Fajria Fitri
-designation: Director of Atmaja Global Edu
+memberName: Miftahussyifa
+designation: Staff of Atmaja College
 ---

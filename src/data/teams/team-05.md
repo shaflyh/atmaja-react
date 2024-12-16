@@ -1,11 +1,11 @@
 ---
-id: 'team-01'
+id: 'team-05'
 title: Team Member
-image: /images/team/Photo-Fitri.png
+image: /images/team/Photo-Nashir.png
 twitterIcon: 'FaTwitter'
 facebookIcon: 'FaFacebookF'
 instagramIcon: 'FaInstagram'
 linkedinIcon: 'FaLinkedin'
-memberName: Nur Fajria Fitri
-designation: Director of Atmaja Global Edu
+memberName: Mohammad Nashir
+designation: Head of Marketing and Partnership
 ---
