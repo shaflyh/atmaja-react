@@ -30,7 +30,13 @@ additionDesc: '
 '
 isFeatured: true
 attachments:
-  - 'Hero-2.png'
-  - 'Hero-2.png'
-  - 'Hero-2.png'
+  - 'USIM-1.png'
+  - 'USIM-2.png'
+  - 'USIM-3.png'
+  - 'USIM-4.png'
+  - 'USIM-5.png'
+  - 'USIM-6.png'
+  - 'USIM-7.png'
+  - 'USIM-8.png'
+  - 'USIM-9.png'
 ---

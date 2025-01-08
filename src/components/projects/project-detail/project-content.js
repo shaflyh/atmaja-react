@@ -99,9 +99,9 @@ function ProjectContent({ project }) {
                                             <Image
                                                 src={projectPath + attachment}
                                                 alt={`Attachment ${uniqueKey}`}
-                                                width={800}
-                                                height={600}
-                                                objectFit="cover"
+                                                layout="responsive" // Automatically scales the image with the container
+                                                width={800} // Set the aspect ratio reference
+                                                height={1150}
                                                 className="rounded shadow"
                                             />
                                         </div>
