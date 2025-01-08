@@ -1,8 +1,8 @@
 ---
 id: 'hero-02'
-title: Hero Image
-image: /images/hero/hero-image-2.jpg
-heroCategory: Eduvacation Xplore
-heroTitle: Yokohama National <br /> University
+title: Program Undergraduate USIM
+image: /images/hero/Hero-2.png
+heroCategory: Study Abroad Program
+heroTitle: 'Program <br> Undergraduate USIM'
 link: /aboard-program2
 ---

@@ -6,13 +6,14 @@ import ProjectBanner from './project-banner';
 
 function ProjectContent({ project }) {
     const imagePath = `/images/projects/${project.slug}/${project.image}`;
+    const descriptionImagePath = `/images/projects/${project.slug}/${project.descriptionImg}`;
 
     return (
         <article>
             <ProjectBanner
-                title={project.title}
+                title={project?.title}
                 excerpt={project.excerpt}
-                categoryName={project.categoryName}
+                categoryName={project.category}
                 image={imagePath}
             />
             <div className="project-upper-box md:pt-[150px] pt-[55px]">
@@ -25,7 +26,7 @@ function ProjectContent({ project }) {
                             </a>
                         </Link>
                     </div>
-                    <ul className="info grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-3">
+                    <ul className="grid grid-cols-1 info sm:grid-cols-2 md:grid-cols-3 gap-y-3">
                         <li>
                             <span className="text-[#4D5660] mr-[5px]">
                                 Location:
@@ -34,27 +35,93 @@ function ProjectContent({ project }) {
                         </li>
                         <li>
                             <span className="text-[#4D5660] mr-[5px]">
-                                Client:
+                                Organizer:
                             </span>
-                            {project?.clientName}
+                            {project?.organizer}
                         </li>
                         <li>
                             <span className="text-[#4D5660] mr-[5px]">
-                                Completed:
+                                Application Deadline:
                             </span>
-                            {project.completedDate}
+                            {project?.applicationDeadline}
                         </li>
                         <li>
                             <span className="text-[#4D5660] mr-[5px]">
-                                Architect:
+                                Start Date:
                             </span>
-                            {project.architectName}
+                            {project?.startDate}
                         </li>
                         <li>
                             <span className="text-[#4D5660] mr-[5px]">
-                                Area:
+                                Eligibility:
                             </span>
-                            {project.squareUnits}
+                            {project?.eligibility}
+                        </li>
+                        <li>
+                            <span className="text-[#4D5660] mr-[5px]">
+                                Funding Coverage:
+                            </span>
+                            {project?.fundingCoverage}
+                        </li>
+                        <li>
+                            <span className="text-[#4D5660] mr-[5px]">
+                                Fields of Study:
+                            </span>
+                            {project?.fieldsOfStudy}
+                        </li>
+                        <li>
+                            <span className="text-[#4D5660] mr-[5px]">
+                                Language Requirement:
+                            </span>
+                            {project?.languageRequirement}
+                        </li>
+                        <li>
+                            <span className="text-[#4D5660] mr-[5px]">
+                                Program Duration:
+                            </span>
+                            {project?.programDuration}
+                        </li>
+                        <li>
+                            <span className="text-[#4D5660] mr-[5px]">
+                                Documents Required:
+                            </span>
+                            {project?.documentsRequired}
+                        </li>
+                        <li>
+                            <span className="text-[#4D5660] mr-[5px]">
+                                Additional Features:
+                            </span>
+                            {project?.additionalFeatures}
+                        </li>
+                        <li>
+                            <span className="text-[#4D5660] mr-[5px]">
+                                Result Announcement:
+                            </span>
+                            {project?.resultAnnouncement}
+                        </li>
+                        <li>
+                            <span className="text-[#4D5660] mr-[5px]">
+                                Contact:
+                            </span>
+                            <a
+                                href={`mailto:${project?.contact}`}
+                                className="underline text-primary"
+                            >
+                                {project?.contact}
+                            </a>
+                        </li>
+                        <li>
+                            <span className="text-[#4D5660] mr-[5px]">
+                                Application Link:
+                            </span>
+                            <a
+                                href={project?.applicationLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="underline text-primary"
+                            >
+                                Apply Here
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -68,14 +135,14 @@ function ProjectContent({ project }) {
                         <div
                             className="text-[18px] leading-8 text-secondary"
                             dangerouslySetInnerHTML={{
-                                __html: project.additionDesc,
+                                __html: project?.additionDesc,
                             }}
                         />
                     </div>
                     <div className="image md:pt-[85px] pt-[50px]">
                         <Image
-                            src={`/images/projects/${project.slug}/${project.descriptionImg}`}
-                            alt={project.alt}
+                            src={descriptionImagePath}
+                            alt={project?.title}
                             width={1170}
                             height={610}
                             objectFit="cover"
@@ -88,7 +155,29 @@ function ProjectContent({ project }) {
 }
 
 ProjectContent.propTypes = {
-    project: PropTypes.instanceOf(Object).isRequired,
+    project: PropTypes.shape({
+        slug: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        excerpt: PropTypes.string,
+        category: PropTypes.string,
+        image: PropTypes.string.isRequired,
+        descriptionImg: PropTypes.string,
+        location: PropTypes.string,
+        organizer: PropTypes.string,
+        applicationDeadline: PropTypes.string,
+        startDate: PropTypes.string,
+        eligibility: PropTypes.string,
+        fundingCoverage: PropTypes.string,
+        fieldsOfStudy: PropTypes.string,
+        languageRequirement: PropTypes.string,
+        programDuration: PropTypes.string,
+        documentsRequired: PropTypes.string,
+        additionalFeatures: PropTypes.string,
+        resultAnnouncement: PropTypes.string,
+        contact: PropTypes.string,
+        applicationLink: PropTypes.string,
+        additionDesc: PropTypes.string.isRequired,
+    }).isRequired,
 };
 
 export default ProjectContent;

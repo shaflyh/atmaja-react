@@ -1,8 +1,8 @@
 ---
 id: 'hero-01'
-title: Hero Image
-image: /images/hero/hero-image-1.jpg
+title: Chinese Government Scholarship
+image: /images/hero/Hero-1.png
 heroCategory: Study Abroad Program
-heroTitle: Undergraduate Universiti <br /> Sains Islam Malaysia
+heroTitle: Chinese Government Scholarship
 link: /aboard-program
 ---

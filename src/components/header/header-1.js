@@ -80,7 +80,7 @@ function HeaderOne() {
                                                     : ''
                                             }
                                         >
-                                            <Link href="/">
+                                            <Link href="/projects">
                                                 <a>
                                                     <span>Programs</span>
                                                 </a>
