@@ -1,15 +1,36 @@
 ---
-title: 'Chinese Government Scholarship'
-category: 'Study Abroad'
-date: '2022-01-12'
+title: 'Universiti Sains Islam Malaysia'
+category: 'Study Abroad Program'
+date: ''
 image: 'Hero-2.png'
-descriptionImg: 'Project 2.png'
-excerpt: 'Study Abroad'
-location: 'China'
+descriptionImg: 'Hero-2.png'
+excerpt: 'Study Abroad Program'
+location: 'Malaysia'
 organizer: 'Atmaja Global Edu'
-startDate: '17 November 2024'
-applicationDeadline: '17 January 2025'
-eligibility: 'Undergraduate, Master''s, and Ph.D. students'
-additionDesc: 'Edden’s Villa Is An International Project Located In Costa Rica. It Has Various Different Levels, Whom Are Embedded Into The Unevenness Of The Terrain. This Project Seeks To Integrate Passive Strategies For Energy Saving, Such As The Inclusion Of As Much Natural Light As Possible As Well As Having Green Roofs With Lots Of Vegetation In Them. <br/> The Geometry Of This House Combines Design With Nature Into The Structure Of The House, Which Makes It Unique Amongst Other Neighboring Places.'
+startDate: ''
+applicationDeadline: ''
+eligibility: ''
+fundingCoverage: ''
+fieldsOfStudy: ''
+languageRequirement: ''
+programDuration: ''
+documentsRequired: ''
+additionalFeatures: ''
+applicationLink: ''
+registerLink: 'https://wa.me/6283135698000'
+resultAnnouncement: ''
+contact: 'info@atmajapin.com'
+additionDesc: '
+    <h2>Discover Exciting Scholarship Opportunities at Universiti Sains Islam Malaysia</h2>
+    <p>Malaysia offers world-class education in a culturally diverse and welcoming environment. Universiti Sains Islam Malaysia is dedicated to nurturing global citizens through a blend of academic excellence and unique cultural experiences.</p>
+    
+    <p>Join a vibrant international community and explore opportunities to grow academically and personally. Universiti Sains Islam Malaysia provides a pathway for students seeking to advance their education while experiencing Malaysia’s rich heritage.</p>
+    
+    <p>Take the next step in your educational journey today!</p>
+'
 isFeatured: true
+attachments:
+  - 'Hero-2.png'
+  - 'Hero-2.png'
+  - 'Hero-2.png'
 ---

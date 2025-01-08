@@ -3,10 +3,38 @@ import PropTypes from 'prop-types';
 import Image from 'next/image';
 import { IoMdGrid } from 'react-icons/io';
 import ProjectBanner from './project-banner';
+import ProjectField from './project-field';
 
 function ProjectContent({ project }) {
+    const projectPath = `/images/projects/${project.slug}/`;
     const imagePath = `/images/projects/${project.slug}/${project.image}`;
     const descriptionImagePath = `/images/projects/${project.slug}/${project.descriptionImg}`;
+
+    const fields = [
+        { label: 'Location', value: project?.location },
+        { label: 'Organizer', value: project?.organizer },
+        { label: 'Application Deadline', value: project?.applicationDeadline },
+        { label: 'Start Date', value: project?.startDate },
+        { label: 'Eligibility', value: project?.eligibility },
+        { label: 'Funding Coverage', value: project?.fundingCoverage },
+        { label: 'Fields of Study', value: project?.fieldsOfStudy },
+        { label: 'Language Requirement', value: project?.languageRequirement },
+        { label: 'Program Duration', value: project?.programDuration },
+        { label: 'Documents Required', value: project?.documentsRequired },
+        { label: 'Additional Features', value: project?.additionalFeatures },
+        { label: 'Result Announcement', value: project?.resultAnnouncement },
+        {
+            label: 'Contact',
+            value: project?.contact,
+            isLink: true,
+            linkPrefix: 'mailto:',
+        },
+        {
+            label: 'Application Link',
+            value: project?.applicationLink,
+            isLink: true,
+        },
+    ];
 
     return (
         <article>
@@ -15,6 +43,7 @@ function ProjectContent({ project }) {
                 excerpt={project.excerpt}
                 categoryName={project.category}
                 image={imagePath}
+                registerLink={project?.registerLink}
             />
             <div className="project-upper-box md:pt-[150px] pt-[55px]">
                 <div className="container">
@@ -27,102 +56,15 @@ function ProjectContent({ project }) {
                         </Link>
                     </div>
                     <ul className="grid grid-cols-1 info sm:grid-cols-2 md:grid-cols-3 gap-y-3">
-                        <li>
-                            <span className="text-[#4D5660] mr-[5px]">
-                                Location:
-                            </span>
-                            {project?.location}
-                        </li>
-                        <li>
-                            <span className="text-[#4D5660] mr-[5px]">
-                                Organizer:
-                            </span>
-                            {project?.organizer}
-                        </li>
-                        <li>
-                            <span className="text-[#4D5660] mr-[5px]">
-                                Application Deadline:
-                            </span>
-                            {project?.applicationDeadline}
-                        </li>
-                        <li>
-                            <span className="text-[#4D5660] mr-[5px]">
-                                Start Date:
-                            </span>
-                            {project?.startDate}
-                        </li>
-                        <li>
-                            <span className="text-[#4D5660] mr-[5px]">
-                                Eligibility:
-                            </span>
-                            {project?.eligibility}
-                        </li>
-                        <li>
-                            <span className="text-[#4D5660] mr-[5px]">
-                                Funding Coverage:
-                            </span>
-                            {project?.fundingCoverage}
-                        </li>
-                        <li>
-                            <span className="text-[#4D5660] mr-[5px]">
-                                Fields of Study:
-                            </span>
-                            {project?.fieldsOfStudy}
-                        </li>
-                        <li>
-                            <span className="text-[#4D5660] mr-[5px]">
-                                Language Requirement:
-                            </span>
-                            {project?.languageRequirement}
-                        </li>
-                        <li>
-                            <span className="text-[#4D5660] mr-[5px]">
-                                Program Duration:
-                            </span>
-                            {project?.programDuration}
-                        </li>
-                        <li>
-                            <span className="text-[#4D5660] mr-[5px]">
-                                Documents Required:
-                            </span>
-                            {project?.documentsRequired}
-                        </li>
-                        <li>
-                            <span className="text-[#4D5660] mr-[5px]">
-                                Additional Features:
-                            </span>
-                            {project?.additionalFeatures}
-                        </li>
-                        <li>
-                            <span className="text-[#4D5660] mr-[5px]">
-                                Result Announcement:
-                            </span>
-                            {project?.resultAnnouncement}
-                        </li>
-                        <li>
-                            <span className="text-[#4D5660] mr-[5px]">
-                                Contact:
-                            </span>
-                            <a
-                                href={`mailto:${project?.contact}`}
-                                className="underline text-primary"
-                            >
-                                {project?.contact}
-                            </a>
-                        </li>
-                        <li>
-                            <span className="text-[#4D5660] mr-[5px]">
-                                Application Link:
-                            </span>
-                            <a
-                                href={project?.applicationLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="underline text-primary"
-                            >
-                                Apply Here
-                            </a>
-                        </li>
+                        {fields.map(({ label, value, isLink, linkPrefix }) => (
+                            <ProjectField
+                                key={label}
+                                label={label}
+                                value={value}
+                                isLink={isLink}
+                                linkPrefix={linkPrefix}
+                            />
+                        ))}
                     </ul>
                 </div>
             </div>
@@ -139,15 +81,46 @@ function ProjectContent({ project }) {
                             }}
                         />
                     </div>
-                    <div className="image md:pt-[85px] pt-[50px]">
-                        <Image
-                            src={descriptionImagePath}
-                            alt={project?.title}
-                            width={1170}
-                            height={610}
-                            objectFit="cover"
-                        />
-                    </div>
+                    {project?.attachments && project.attachments.length > 0 && (
+                        <div className="attachments md:pt-[50px] pt-[30px]">
+                            <h3 className="text-[24px] leading-[36px] pb-5">
+                                Additional Attachments
+                            </h3>
+                            <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
+                                {project.attachments.map((attachment) => {
+                                    const uniqueKey = attachment
+                                        .split('/')
+                                        .pop(); // Extract the file name or unique part of the URL
+                                    return (
+                                        <div
+                                            key={uniqueKey}
+                                            className="attachment"
+                                        >
+                                            <Image
+                                                src={projectPath + attachment}
+                                                alt={`Attachment ${uniqueKey}`}
+                                                width={800}
+                                                height={600}
+                                                objectFit="cover"
+                                                className="rounded shadow"
+                                            />
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    )}
+                    {project?.descriptionImg && (
+                        <div className="image md:pt-[85px] pt-[50px]">
+                            <Image
+                                src={descriptionImagePath}
+                                alt={project?.title}
+                                width={1170}
+                                height={610}
+                                objectFit="cover"
+                            />
+                        </div>
+                    )}
                 </div>
             </div>
         </article>
@@ -177,6 +150,8 @@ ProjectContent.propTypes = {
         contact: PropTypes.string,
         applicationLink: PropTypes.string,
         additionDesc: PropTypes.string.isRequired,
+        attachments: PropTypes.arrayOf(PropTypes.string),
+        registerLink: PropTypes.string,
     }).isRequired,
 };
 
