@@ -1,6 +1,6 @@
 ---
 title: 'Universiti Sains Islam Malaysia'
-category: 'Study Abroad Program'
+category: 'study'
 date: ''
 image: 'Hero-2.png'
 descriptionImg: 'Hero-2.png'

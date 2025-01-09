@@ -1,6 +1,6 @@
 ---
 title: 'Chinese Government Scholarship'
-category: 'Study Abroad Program'
+category: 'study'
 date: ''
 image: 'Hero-1.png'
 descriptionImg: 'Hero-1.png'

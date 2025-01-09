@@ -6,10 +6,10 @@ function DarkLogo() {
         <Link href="/">
             <a className="inline-block align-middle leading-[1]">
                 <Image
-                    src="/images/logo/logo-2.png"
+                    src="/images/logo/atmaja-color.png"
                     alt="Logo"
-                    width={70}
-                    height={70}
+                    width={180}
+                    height={60}
                 />
             </a>
         </Link>

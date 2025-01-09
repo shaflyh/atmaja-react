@@ -10,13 +10,10 @@ function allItemsPage({ projects }) {
         <>
             <Head>
                 <title>All Projects</title>
-                <meta
-                    name="description"
-                    content="A list of all programming-related tutorials and projects!"
-                />
+                <meta name="description" content="A list of all programs" />
             </Head>
             <HeaderTwo />
-            <Breadcrumb activePage="Projects" pageTitle="Our Projects" />
+            <Breadcrumb activePage="Programs" pageTitle="Our Programs" />
             <AllProjects projects={projects} />
         </>
     );

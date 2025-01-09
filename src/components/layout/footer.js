@@ -48,7 +48,7 @@ function Footer() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-span-3 fixed-lg:col-span-3 fixed-md:col-span-3 fixed-lm:col-span-12 flex flex-col items-center max-lm:text-center max-sm:pt-[30px]">
+                        {/* <div className="col-span-3 fixed-lg:col-span-3 fixed-md:col-span-3 fixed-lm:col-span-12 flex flex-col items-center max-lm:text-center max-sm:pt-[30px]">
                             <div className="footer-widget-item">
                                 <h2 className="title">Quick Links</h2>
                                 <ul className="footer-list mt-[25px]">
@@ -69,7 +69,7 @@ function Footer() {
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

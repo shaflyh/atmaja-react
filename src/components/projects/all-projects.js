@@ -12,7 +12,7 @@ function AllProjects({ projects: initialProject }) {
         const filterValue = target.dataset.filter;
         setCurrentFilter(filterValue);
         const filteredProjects = initialProject.filter(
-            (pro) => pro.category === filterValue
+            (project) => project.category === filterValue
         );
         filterValue === 'all'
             ? setProjects(initialProject)
@@ -34,15 +34,15 @@ function AllProjects({ projects: initialProject }) {
                     </button>
                     <button
                         className={`${
-                            currentFilter === 'residenital' ? 'active' : ''
+                            currentFilter === 'study' ? 'active' : ''
                         } ml-10`}
                         type="button"
                         onClick={onFilterHandler}
-                        data-filter="residenital"
+                        data-filter="study"
                     >
-                        Residenital
+                        Study Aboard Program
                     </button>
-                    <button
+                    {/* <button
                         className={`${
                             currentFilter === 'commercial' ? 'active' : ''
                         } ml-10`}
@@ -61,7 +61,7 @@ function AllProjects({ projects: initialProject }) {
                         data-filter="suitanable-space"
                     >
                         Suitantable Space
-                    </button>
+                    </button> */}
                 </div>
             </div>
             <div className="grid xl:grid-cols-4 fixed-lg:grid-cols-3 fixed-md:grid-cols-2 gap-[5px]">

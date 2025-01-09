@@ -36,12 +36,12 @@ function HeaderTwo() {
     return (
         <>
             <header className="header-section sticky-style-2" ref={header}>
-                <div className="custom-container container">
+                <div className="container custom-container">
                     <div className="grid grid-cols-12 items-center leading-[120px]">
-                        <div className="lg:col-span-2 col-span-6">
+                        <div className="col-span-6 lg:col-span-2">
                             <DarkLogo />
                         </div>
-                        <div className="lg:col-span-7 lg:block hidden">
+                        <div className="hidden lg:col-span-7 lg:block">
                             <nav>
                                 <ul className="main-menu">
                                     <li
@@ -72,27 +72,27 @@ function HeaderTwo() {
                                     </li>
                                     <li
                                         className={
-                                            router.pathname === '/projects'
+                                            router.pathname === '/programs'
                                                 ? 'active'
                                                 : ''
                                         }
                                     >
                                         <Link href="/projects">
                                             <a>
-                                                <span>Projects</span>
+                                                <span>Programs</span>
                                             </a>
                                         </Link>
                                     </li>
                                     <li
                                         className={
-                                            router.pathname === '/posts'
+                                            router.pathname === '/projects'
                                                 ? 'active'
                                                 : ''
                                         }
                                     >
-                                        <Link href="/posts">
+                                        <Link href="/">
                                             <a>
-                                                <span>Posts</span>
+                                                <span>Projects</span>
                                             </a>
                                         </Link>
                                     </li>
@@ -103,7 +103,7 @@ function HeaderTwo() {
                                                 : ''
                                         }
                                     >
-                                        <Link href="/contact">
+                                        <Link href="/">
                                             <a>
                                                 <span>Contact</span>
                                             </a>
@@ -112,16 +112,9 @@ function HeaderTwo() {
                                 </ul>
                             </nav>
                         </div>
-                        <div className="lg:col-span-3 col-span-6">
+                        <div className="col-span-6 lg:col-span-3">
                             <div className={`outer-box ${headerCss}`}>
-                                <ul className="language-list">
-                                    <li>
-                                        <Link href="/">END</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/">FRA</Link>
-                                    </li>
-                                </ul>
+                                <ul className="language-list" />
                                 <div className="offcanvas-area">
                                     <div className="offcanvas">
                                         <button
@@ -155,9 +148,9 @@ function HeaderTwo() {
                                     <Link href="/">
                                         <a>
                                             <Image
-                                                src="/images/logo/logo-2.png"
+                                                src="/images/logo/atmaja-color.png"
                                                 alt="Logo"
-                                                width={70}
+                                                width={240}
                                                 height={70}
                                             />
                                         </a>
