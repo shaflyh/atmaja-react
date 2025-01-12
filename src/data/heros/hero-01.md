@@ -4,5 +4,5 @@ title: Chinese Government Scholarship
 image: /images/hero/Hero-1.png
 heroCategory: Study Abroad Program
 heroTitle: Chinese Government Scholarship
-link: /aboard-program
+link: /projects/project-1
 ---

@@ -4,5 +4,5 @@ title: Program Undergraduate USIM
 image: /images/hero/Hero-2.png
 heroCategory: Study Abroad Program
 heroTitle: 'Program <br> Undergraduate USIM'
-link: /aboard-program2
+link: /projects/project-2
 ---
